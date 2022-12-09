@@ -82,7 +82,7 @@ const getAllBooksHandler = (request) => {
 
   if (name !== undefined) {
     tempBooks = tempBooks.filter((book) =>
-      book.name.toLowerCase().includes(name)
+      book.name.toLowerCase().includes(name.toLowerCase())
     );
   }
 
